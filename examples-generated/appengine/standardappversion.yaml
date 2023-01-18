@@ -80,4 +80,3 @@ spec:
     source: ./test-fixtures/appengine/hello-world.zip
 
 ---
-
