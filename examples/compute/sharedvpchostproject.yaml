@@ -10,4 +10,3 @@ metadata:
 spec:
   forProvider:
     project: host-project-id
-

@@ -43,3 +43,5 @@ Please open a Github issue for all requests. If you need to reach out to Upbound
 
 Provider GCP is under [the Apache 2.0 license](LICENSE) with [notice](NOTICE).
 
+
+docker tag $(docker load -i _output/xpkg/linux_arm64/provider-gcp-v0.0.0-418.g1bf342e.dirty.xpkg -q | awk -F: '{print $3}') europe-west3-docker.pkg.dev/xxxlgroup-project-bootstrap/crossplane-providers/provider-gcp:remi_v1
