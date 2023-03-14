@@ -66,6 +66,8 @@ spec:
                 type: string
               forProvider:
                 properties:
+                  deletionPolicy:
+                    type: string
                   hostProject:
                     description: The ID of a host project to associate.
                     type: string

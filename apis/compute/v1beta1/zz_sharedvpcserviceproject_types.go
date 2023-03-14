@@ -33,6 +33,9 @@ type SharedVPCServiceProjectObservation struct {
 
 type SharedVPCServiceProjectParameters struct {
 
+	// +kubebuilder:validation:Optional
+	DeletionPolicy *string `json:"deletionPolicy,omitempty" tf:"deletion_policy,omitempty"`
+
 	// The ID of a host project to associate.
 	// +kubebuilder:validation:Required
 	HostProject *string `json:"hostProject" tf:"host_project,omitempty"`
