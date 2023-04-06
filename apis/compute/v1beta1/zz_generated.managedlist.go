@@ -721,24 +721,6 @@ func (l *SnapshotList) GetItems() []resource.Managed {
 	return items
 }
 
-// GetItems of this SharedVPCHostProjectList.
-func (l *SharedVPCHostProjectList) GetItems() []resource.Managed {
-	items := make([]resource.Managed, len(l.Items))
-	for i := range l.Items {
-		items[i] = &l.Items[i]
-	}
-	return items
-}
-
-// GetItems of this SharedVPCServiceProjectList.
-func (l *SharedVPCServiceProjectList) GetItems() []resource.Managed {
-	items := make([]resource.Managed, len(l.Items))
-	for i := range l.Items {
-		items[i] = &l.Items[i]
-	}
-	return items
-}
-
 // GetItems of this SubnetworkIAMMemberList.
 func (l *SubnetworkIAMMemberList) GetItems() []resource.Managed {
 	items := make([]resource.Managed, len(l.Items))
